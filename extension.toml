@@ -1,0 +1,8 @@
+id = "silq"
+name = "Silq"
+version = "0.0.1"
+schema_version = 1
+authors = ["Abel Tognoni <abeltognonipro@gmail.com>"]
+description = "Silq programming language extension for zed"
+repository = "https://github.com/AbelTogn/my-zed-extension"
+
