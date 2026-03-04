@@ -1,17 +1,22 @@
 use zed_extension_api as zed;
-use language_servers::{SilqLSP, SilqLanguageServer};
 
-pub struct SilqExtension {
-    silq_language_server: Option<SilqLanguageServer>,
-    silq_lsp: Option<SilqLSP>,
-}
+pub struct SilqExtension;
 
 impl zed::Extension for SilqExtension {
     fn new() -> Self {
-        Self {
-            silq_language_server: None,
-            silq_lsp: None,
-        }
+        Self
+    }
+
+    fn language_server_command(
+        &mut self,
+        _language_server_id: &zed::LanguageServerId,
+        _worktree: &zed::Worktree,
+    ) -> zed::Result<zed::Command> {
+        Ok(zed::Command {
+            command: "silq-lsp".into(),
+            args: vec![],
+            env: vec![],
+        })
     }
 }
 

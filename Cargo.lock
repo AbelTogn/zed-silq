@@ -3,13 +3,6 @@
 version = 4
 
 [[package]]
-name = "Silq"
-version = "0.0.1"
-dependencies = [
- "zed_extension_api",
-]
-
-[[package]]
 name = "adler2"
 version = "2.0.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -471,6 +464,14 @@ dependencies = [
  "serde",
  "serde_core",
  "zmij",
+]
+
+[[package]]
+name = "silq"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "zed_extension_api",
 ]
 
 [[package]]

@@ -1,11 +1,14 @@
 [package]
-name = "Silq"
-version = "0.0.1"
-edition = "2026"
-license = "MIT"
+name = "silq" 
+version = "0.1.0"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+description = "Silq language support for Zed"
+repository = "https://github.com/AbelTogn/zed-silq" 
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-zed_extension_api = "0.7.0"
+zed_extension_api = "0.7"
+anyhow = "1.0"
