@@ -3,6 +3,7 @@ grammar = "silq"
 path_suffixes = ["slq"]
 line_comments = ["//"]
 block_comments = [{start = "/*", end = "*/"}]
+grammar = "silq"
 brackets = [
     { start = "(", end = ")", close = true, newline = true },
     { start = "[", end = "]", close = true, newline = true },
